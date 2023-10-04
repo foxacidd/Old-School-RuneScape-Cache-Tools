@@ -23,9 +23,8 @@ public class SoundEffectDecoder {
         gui = currentGUI;
         cacheLibrary = GUI.cacheLibrary;
         int index = currentGUI.selectedIndex;
-        int archive = currentGUI.selectedArchive;
         int file = currentGUI.selectedFile;
-
+    for(int archive = 0;archive<4196;archive++;){
         try {
 
             File outputFilePath = new File(GUI.cacheLibrary.getPath() + File.separator + "Decoded Data" + File.separator + "Sound Effects");
@@ -47,5 +46,6 @@ public class SoundEffectDecoder {
         } catch(IOException e){
             e.printStackTrace();
         }
+    }
     }
 }
